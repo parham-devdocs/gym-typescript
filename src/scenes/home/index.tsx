@@ -21,7 +21,7 @@ const Home = ({ setSelectedPage }: Props) => {
           <div className=" space-y-10 z-10 basis-3/5 mt-32">
             <div className=" relative">
               <div className=" before:absolute before:-top-20 before:-left-12 md:before:content-evolvetext before:opacity-60">
-                <img src={HomePageText} alt="home-page-text" />
+                <img src={HomePageText} alt="home-page-text" className=" animate-fadeIn" />
               </div>
             </div>
             <p className=" font-semibold">
@@ -30,8 +30,8 @@ const Home = ({ setSelectedPage }: Props) => {
               now{" "}
             </p>
           </div>
-          <div className=" flex gap-6 items-center font-semibold">
-            <div className=" bg-secondary-500 rounded-md py-2 px-10 w-fit cursor-pointer transition-colors duration-300 hover:bg-primary-500 hover:text-primary-100 ">
+          <div className=" flex gap-6 items-center font-semibold animate-fadeLeft">
+            <div className=" bg-secondary-500 rounded-md py-2 px-10 w-fit cursor-pointer transition-colors duration-300 hover:bg-primary-500 hover:text-primary-100  ">
               <Actionbutton setSelectedPage={setSelectedPage}>
                 Join now
               </Actionbutton>
@@ -53,7 +53,7 @@ const Home = ({ setSelectedPage }: Props) => {
       {isAboveMediaQuery && (
         <div>
           <div>
-            <div className=" flex bg-primary-500 justify-around py-5 items-center">
+            <div className=" flex bg-primary-300 justify-around py-5 items-center">
               <img src={SponsorRedBull} alt="redbull-sponsor" />
               <img src={SponsorForbes} alt="redbull-sponsor" />
               <img src={SponsorFortune} alt="fortune-sponsor" />

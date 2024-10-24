@@ -2,7 +2,22 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        fadeIn: "fadeIn 0.9s ease-in forwards",
+        fadeLeft:"fadeLeft 0.9s ease-in forwards"
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+        fadeLeft: {
+          "0%": { transform: 'translateX(-50px)',opacity:'0' },
+          "100%":{transform:'translateX(0px)',opacity:'1'}
+        }
+      },
+    },
     colors: {
       "gray-20": "#F8F4EB",
       "gray-50": "#EFE6E6",
@@ -34,6 +49,5 @@ export default {
       md: "1060px",
     },
   },
-  plugins: [
-  ],
+  plugins: [],
 };
