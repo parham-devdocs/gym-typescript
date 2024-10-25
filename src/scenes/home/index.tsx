@@ -15,7 +15,7 @@ type Props = {
 const Home = ({ setSelectedPage }: Props) => {
   const isAboveMediaQuery = useMediaQuery("(min-width:1060px)");
   return (
-    <section id="home" className=" gap-16 bg-gray-20 py-10 md:h-full md:pb-6 ">
+    <section id="home" className=" gap-16 bg-gray-20 py-10 md:h-full  ">
       <div className=" md:flex  items-center justify-center md:h-5/6 mx-auto w-5/6">
         <div className=" space-y-10 ">
           <div className=" space-y-10 z-10 basis-3/5 mt-32">

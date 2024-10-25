@@ -2,6 +2,7 @@ import { useState } from "react";
 import Navbar from "./components/Navbar";
 import { SelectedPage } from "./types";
 import Home from "./scenes/home/index";
+import Benefits from "./scenes/benefits";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(
@@ -17,7 +18,8 @@ function App() {
         isMenuToggled={isMenuToggled}
         setItemMenuToggle={setItemMenuToggle}
       />
-      <Home setSelectedPage={ setSelectedPage } />
+      <Home setSelectedPage={setSelectedPage} />
+      <Benefits setSelectedPage={()=>setSelectedPage(selectedPage)}/>
     </div>
   );
 }
