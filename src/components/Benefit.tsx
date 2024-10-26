@@ -13,7 +13,8 @@ const Benefit = ({
   description,
   setSelectedPage,
 }: BenefitType & { setSelectedPage: (value: SelectedPage) => void }) => {
-  return (
+    return (
+      
       <motion.div
           variants={childVariant}
       className="benefit-container mt-5 rounded-md flex flex-col items-center justify-between gap-4 border-[2px] border-gray-100 py-7 px-3 "
